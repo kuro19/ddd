@@ -1,0 +1,89 @@
+body{
+font-family:Arial;sans-serif;
+font-variant:small-caps;
+}
+
+h1 {
+font-family:Arial;sans-serif;
+font-size: 20px;
+font-weight: bold;
+margin-top:3px;
+margin-bottom:3px;
+font-variant:small-caps;
+}
+
+h3, h2{
+font-family:Arial;sans-serif;
+font-variant:small-caps;
+font-size: 16px;
+font-weight: bold;
+margin-top:3px;
+margin-bottom:3px;
+}
+
+
+h4 {
+font-family:Arial;sans-serif;
+font-size: 13px;
+font-weight: bold;
+margin-top:3px;
+margin-bottom:0px;
+font-variant:small-caps;
+}
+
+p{
+font-family:Arial;sans-serif;
+font-size: 12px;
+font-variant:small-caps;
+}
+
+#pa{
+font-size: 9px;
+}
+
+#hh{
+font-size: 14px;
+}
+
+
+.sel {
+font-family:Arial;sans-serif;
+font-size: 12px;
+background-color: #D9DFE1;
+width:65px;
+height:20px;
+padding:11px;
+}
+
+a{
+font-family:Arial;sans-serif;
+font-size: 14px;
+text-decoration: none;
+color: #405A01;
+font-weight: bold;
+font-variant:small-caps;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+a img {
+border: 0px;
+}
+
+#info a span {
+font-size: 11px;
+text-align: center;
+text-decoration: none;
+color: #405A01;
+font-variant:small-caps;
+}
+
+#info a span {display: none;}
+
+#info a:hover span {display: block; text-decoration : none;
+position: relative; top: 5px; left: -70px; width: 140px;
+padding: 2px; margin: -10px; z-index: 0; color: #333333; background: #CED8F6;}
+
+ 

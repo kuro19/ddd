@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script src="../lang/langdat.js" type="text/javascript"></script>
+<script type="text/javascript">
+lang1 = "../lang/" + lang + ".js"
+document.write("<script type='text/javascript' src="+ lang1 + "><\/script>");
+</script>
+<link rel="stylesheet" href="tom.css" type="text/css">
+<script type="text/javascript">
+function sendPoints()
+{
+var ids = new Array ("xx", "yy", "zz");
+
+var arg = ""; var entry = ""; var valid = true;
+
+for (i in ids)
+{
+entry = document.getElementById(ids[i]).value
+if ((entry.length == 0) || isNaN(entry))
+{
+valid = false;
+}
+else
+{
+arg = arg + entry + ",";
+}
+}
+
+if (!valid)
+{
+arg = "";
+}
+window.location = "skp:box6@" + arg ;
+}
+</script>
+
+</head>
+<body>
+<table>
+<tr><td colspan="2"><img src="icon/ws13.jpg" alt="">  <img src="icon/pa13.jpg" alt=""><h2><script>document.write(nav26);</script></h2></td></tr>
+<tr><td align="right" ><p><script>document.write(mat3);</script>:</td><td><input type="text" id="zz" onFocus="this.select()" value="564" size="5" /></td></tr>
+<tr><td align="right" ><p><script>document.write(mat4);</script>: </td><td><input type="text" id="xx" onFocus="this.select()" value="80" size="5" /></td></tr>
+<tr><td align="right" ><p><script>document.write(mat6);</script>: </td><td><input type="text" id="yy" onFocus="this.select()" value="18" size="5" /></td></tr>
+<tr><td></td><td><input type="submit" onClick="sendPoints();" value="OK" /></td></tr>
+</table>
+
+
+</body>
+</html>

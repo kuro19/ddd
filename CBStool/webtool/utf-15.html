@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script src="../lang/langdat.js" type="text/javascript"></script>
+<script type="text/javascript">
+lang1 = "../lang/" + lang + ".js"
+document.write("<script type='text/javascript' src="+ lang1 + "><\/script>");
+</script>
+<link rel="stylesheet" href="tom.css" type="text/css">
+<script type="text/javascript">
+za = 15
+function sendPoints()
+{
+
+za1 = document.getElementById("s1").value
+za2 = document.getElementById("s2").value
+za3 = document.getElementById("s3").value
+za4 = document.getElementById("s4").value
+za5 = document.getElementById("s5").value
+za6 = document.getElementById("s6").value
+za7 = document.getElementById("s7").value
+za8 = document.getElementById("s8").value
+za9 = document.getElementById("s9").value
+sum =  parseInt(za1)+parseInt(za2)+parseInt(za3)+parseInt(za4)+parseInt(za5)+parseInt(za6)+parseInt(za7)+parseInt(za8)+parseInt(za9)
+
+var ids = new Array ("s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9");
+var arg = ""; var entry = ""; var valid = true;
+
+for (i in ids)
+{
+entry = document.getElementById(ids[i]).value
+if ((entry.length == 0) || isNaN(entry))
+{
+valid = false;
+}
+else
+{
+arg = arg + entry + ",";
+}
+}
+
+if (!valid)
+{
+arg = "";
+}
+
+if ( sum != za)
+{
+more = confirm (sum + " x " + mat16 + "?");
+if (more == false)
+{
+return;
+ }
+else
+{
+window.location = "skp:utf@" + arg;
+}
+}
+else
+{
+window.location = "skp:utf@" + arg;
+}
+}
+</script>
+
+</head>
+<body>
+<<table>
+<tr><td><img src="icon/3-2-1-10.jpg" alt=""><h2><script>document.write("9 x 15/6 " + mat16);</script></h2></td>
+<td></td></tr>
+</table>
+<table>
+<tr><td align="right" ><p><script>document.write(mat263);</script>:</td><td><select style="font:'12'" class="sel" id="s9"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat262);</script>:</td><td><select style="font:'12'" class="sel" id="s8"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat261);</script>:</td><td><select style="font:'12'" class="sel" id="s7"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat26);</script>:</td><td><select style="font:'12'" class="sel" id="s6"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat25);</script>:</td><td><select style="font:'12'" class="sel" id="s5"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat24);</script>:</td><td><select style="font:'12'" class="sel" id="s4"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat23);</script>:</td><td><select style="font:'12'" class="sel" id="s3"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat22);</script>:</td><td><select style="font:'12'" class="sel" id="s2"><option value="0">0</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td align="right" ><p><script>document.write(mat21);</script>:</td><td><select style="font:'12'" class="sel" id="s1"><option value="15">15/6</option><option value="1">1/6</option><option value="2">2/6</option><option value="3">3/6</option><option value="4">4/6</option><option value="5">5/6</option><option value="6">6/6</option><option value="7">7/6</option><option value="8">8/6</option><option value="9">9/6</option><option value="10">10/6</option><option value="11">11/6</option><option value="12">12/6</option><option value="13">13/6</option><option value="14">14/6</option><option value="15">15/6</option> </select></td><td><p><script>document.write(mat15);</script></td></tr>
+<tr><td></td><td><input type="submit" onclick="sendPoints();" value="OK" /></td></tr>
+</table>
+
+</body>
+</html>
